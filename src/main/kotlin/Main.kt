@@ -33,18 +33,13 @@ fun main(args: Array<String>) {
 
 
     val kilometerWin = KilometerWin(floydsAlgo.masSm)
-    kilometerWin.readMatrixKWin()
+    /*kilometerWin.readMatrixKWin()
     println()
     readMatrix(makeMatrixRoutAndKmWni(floydsAlgo.masSm,kilometerWin.arrayKWin))
-    readMatrix(makeKmWinMatrix(table))
+    readMatrix(makeKmWinMatrix(table))*/
 
     println("Klarks")
-    val k = ClarksRaytAlgo(table,list)
-    println(k.routList)
-
-    println(k.rowIndexForRout)
-    println(k.columnIndexForRout)
-    readMatrix(k.matrix)
+    val k = ClarksRaytAlgo(makeKmWinMatrix(table),list)
     println(k.listWeight)
 
 
